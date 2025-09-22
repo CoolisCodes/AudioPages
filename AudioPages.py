@@ -154,7 +154,7 @@ class TextToSpeechApp:
             return
             
         try:
-            choice = input("Select a voice number (or press Enter for default): ")).strip()
+            choice = input("Select a voice number (or press Enter for default): ").strip()
             if choice and choice.isdigit():
                 choice_idx = int(choice) - 1
                 if 0 <= choice_idx < len(voices):
